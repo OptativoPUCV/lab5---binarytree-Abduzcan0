@@ -123,7 +123,9 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
             if(tree->lower_than(key,tree->current->pair->key)){
                 tree->current=tree->current->left;
             }else{
-                if(is_equal(tree, tree->current->pair->key, key))
+                if(is_equal(tree, tree->current->pair->key, key)){
+                    return tree->current->pair;
+                }
                 tree->current=tree->current->right;
             }
             
