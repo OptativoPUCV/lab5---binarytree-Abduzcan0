@@ -110,3 +110,14 @@ Fri 21 Apr 2023 06:50:31 PM UTC:
  tests:  8|6
 total_score: 15/70
 1c7045a
+Fri 21 Apr 2023 07:13:23 PM UTC: 
+ treemap.c | 27 +++++++++++++++++----------
+ 1 file changed, 17 insertions(+), 10 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:134:1: error: control reaches end of non-void function [-Werror=return-type]
+  134 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e8f8eab
