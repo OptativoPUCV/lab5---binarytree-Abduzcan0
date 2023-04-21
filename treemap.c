@@ -129,7 +129,7 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
             
         }
     }
-
+    return tree->current->pair;
 
 }
 
