@@ -156,6 +156,14 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current=tree->current->right;
         return tree->current->pair;
     }
+    while(tree->current->parent!=NULL && tree->current==tree->current->right){
+        tree->current=tree->current->parent;
+        
+    }
+    if(tree->current->parent!=NULL){
+        tree->current=tree->current->parent;
+        return  tree->current->pair;
+    }
     
     return NULL;
 }
