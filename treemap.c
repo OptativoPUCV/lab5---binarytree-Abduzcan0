@@ -141,10 +141,9 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 Pair * upperBound(TreeMap * tree, void* key) {
     
-    Pair* a = searchTreeMap(tree, key);
     
 
-   
+   return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
