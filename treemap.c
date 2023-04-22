@@ -163,8 +163,8 @@ Pair * nextTreeMap(TreeMap * tree) {
         tree->current=parent;
         parent=parent->parent;
     }
-    if(tree->current->parent!=NULL){
-        tree->current=tree->current->parent;
+    if(parent != NULL){
+        tree->current = parent;
         return  tree->current->pair;
     }
     
